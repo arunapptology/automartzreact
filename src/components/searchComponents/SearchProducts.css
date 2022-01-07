@@ -1,0 +1,112 @@
+.active__search {
+  display: flex;
+  flex-wrap: wrap;
+}
+.active__search .active__search__card,
+.active__search .clear__all {
+  font-size: 13px;
+  background-color: var(--bs-gray-200);
+  border-radius: 6px;
+  padding: 10px 16px;
+  /* color: #fff; */
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  line-height: 1;
+}
+.active__search .active__search__card::after {
+  content: "\26CC";
+  font-size: 8px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+.active__search .active__search__card:hover {
+  background-color: var(--bs-danger);
+  color: #fff;
+}
+.active__search .clear__all {
+  background-color: var(--bs-danger);
+  color: #fff;
+}
+
+.active__search .clear__all i {
+  margin-right: 6px;
+}
+
+.search__products__wrapper .card {
+  border-radius: 6px;
+  overflow: hidden;
+  height: 100%;
+}
+.search__products__wrapper .card .card__header {
+  overflow: hidden;
+}
+.search__products__wrapper .card .card-img-top {
+  height: 180px;
+  object-fit: contain;
+  transition: all 0.3s;
+}
+.search__products__wrapper .card__header .card__buttons span:first-child {
+  background-color: var(--bs-primary);
+}
+.search__products__wrapper .card__header .card__buttons span:last-child {
+  background-color: var(--bs-danger);
+}
+.search__products__wrapper .card-body {
+  background-color: var(--bs-gray-200);
+  text-align: center;
+}
+.search__products__wrapper .card-body .card-title {
+  text-align: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+.search__products__wrapper .card-body a {
+  font-size: 14px;
+  display: inline-block;
+  /* background-color: var(--bs-primary); */
+  border: 1px solid var(--bs-primary);
+  color: var(--bs-primary);
+  padding: 4px 20px;
+  border-radius: 4px;
+  margin-top: 4px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.search__products__wrapper .card-body a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--bs-primary);
+  z-index: -1;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+.search__products__wrapper .card-body a:hover {
+  color: #fff;
+}
+.search__products__wrapper .card-body a:hover::before {
+  width: 100%;
+}
+.search__products__wrapper .card:hover .card-img-top {
+  transform: scale(1.1);
+}
+.search__products__wrapper .card .ask__button {
+  color: var(--bs-danger);
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+}
+
+.infinite-scroll-component {
+  overflow-x: hidden !important;
+}

@@ -1,0 +1,252 @@
+/* body{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+} */
+.dashboard .top__stats p {
+  font-size: 18px;
+}
+.dashboard {
+  /* background: #ebebeb; */
+  background-color: #1d61a3;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
+}
+.dashboard .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+.rating__stars {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating__stars li {
+  margin: 0 2px;
+}
+.fa-star,
+.fa-star-o {
+  color: gold;
+}
+.profile-img {
+  text-align: center;
+}
+.profile-img img {
+  width: 70%;
+  height: 100%;
+}
+.profile-img .file {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20%;
+  width: 70%;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #212529b8;
+}
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+.profile-head h5 {
+  color: #333;
+  text-transform: capitalize;
+}
+.profile-head h6 {
+  color: #0062cc;
+}
+
+.profile-head ul .nav-item {
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+.profile-head p {
+  font-size: 13px;
+}
+.profile-edit-btn {
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+}
+.proile-rating {
+  font-size: 12px;
+  color: #818182;
+}
+.proile-rating span {
+  color: #495057;
+  font-size: 15px;
+  font-weight: 600;
+}
+.profile-head .nav-tabs {
+  margin-bottom: 5%;
+}
+.profile-head .nav-tabs .nav-link {
+  font-weight: 600;
+  border: none;
+}
+.profile-head .nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 1px solid #0062cc;
+}
+.profile-work {
+  padding: 14%;
+  margin-top: -15%;
+}
+.profile-work p {
+  font-size: 12px;
+  color: #818182;
+  font-weight: 600;
+  margin-top: 10%;
+  /* background: #dfdfdf; */
+  /* border: 1px dashed #bfbfbf; */
+  padding: 5px 0px;
+  border-bottom: 1px dashed #afafaf;
+}
+.profile-work li a {
+  text-decoration: none;
+  color: #626364;
+  font-weight: 400;
+  font-size: 14px;
+  float: right;
+}
+
+.profile-work li b {
+  font-size: 14px;
+}
+.profile-work ul {
+  list-style: none;
+}
+.profile-tab label {
+  font-weight: 600;
+  font-size: 14px;
+}
+.profile-tab p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-work-main {
+  padding: 0px 10px;
+  background: white;
+  box-shadow: 0px 0px 8px -4px #727272;
+}
+
+.upload_btn {
+  float: right;
+}
+
+.upload_btn span:first-child {
+  font-weight: 400;
+  background: #17a2b8;
+  padding: 5px;
+  line-height: 5px;
+  color: white;
+  margin: 0px 7px;
+  border-radius: 3px;
+}
+
+.upload_btn span:last-child {
+  font-weight: 400;
+  background: #dc3545;
+  padding: 5px;
+  line-height: 5px;
+  color: white;
+  margin: 0px 7px;
+  border-radius: 3px;
+}
+
+.upload_btn .dropdown-item {
+  padding: 0.7rem;
+}
+
+.upload_btn .dropdown-item a {
+  color: #484848;
+}
+
+.upload_btn .dropdown-item:not(:last-child) {
+  border-bottom: 1px dotted #cbcbcb;
+}
+
+.nav-box-main .table tr td img {
+  width: 40px;
+}
+
+.nav-box-main .table tr td:nth-last-child(2) {
+  color: green;
+}
+
+/* .nav-box-main .table tbody{  
+    max-height: 250px;
+    overflow-x: auto;
+    display: table-caption;
+} */
+
+.view__profile tr > td:first-child {
+  text-transform: capitalize;
+}
+
+.stock__table th,
+.stock__table td {
+  vertical-align: top !important;
+}
+
+.dashboard .form-control {
+  font-size: 14px;
+}
+.dashboard .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.input__control.color span {
+  background-color: var(--bs-gray-200);
+  border-radius: 6px;
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 34;
+  line-height: 34px;
+  border-radius: 30px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+.vehicle__nod .custom__input__radio input ~ label {
+  background: var(--bs-gray-200);
+}
+.dashboard form .custom__btn {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 180px;
+}
+.dashboard form .custom__btn:hover {
+  border-color: var(--bs-danger);
+}
+.dashboard form .custom__btn::before {
+  background-color: var(--bs-danger);
+}
+.form__preview table tr td:first-child {
+  font-weight: 500;
+  width: 40%;
+  text-transform: capitalize;
+}
+.form__preview table td {
+  padding: 8px 12px !important;
+}

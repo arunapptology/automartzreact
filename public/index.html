@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="AUTOMARTZ : Indian B2B & B2C portal of the entire Automobile industry. Get
+info of Vehicles, Auto spare parts, accessories, dealers buyers sellers & much
+more."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- Disable pinterest to save images -->
+    <meta name="pinterest" content="nopin" />
+
+    <!-- Map box CSS -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script
+      async
+      defer
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"
+    ></script>
+    <!-- <script type="text/javascript" src="js/instafeed.min.js" > </script> -->
+    <title>
+      AUTOMARTZ:Find Sellers Vehicles Spare Parts Accessories & All Services
+    </title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        // Toggle the side navigation
+        const sidebarToggle = document.body.querySelector("#sidebarToggle");
+        if (sidebarToggle) {
+          // Uncomment Below to persist sidebar toggle between refreshes
+          // if (localStorage.getItem('sb|sidebar-toggle') === 'true') {
+          //     document.body.classList.toggle('sb-sidenav-toggled');
+          // }
+          sidebarToggle.addEventListener("click", (event) => {
+            event.preventDefault();
+            document.body.classList.toggle("sb-sidenav-toggled");
+            localStorage.setItem(
+              "sb|sidebar-toggle",
+              document.body.classList.contains("sb-sidenav-toggled")
+            );
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
